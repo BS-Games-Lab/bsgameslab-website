@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import logoMark from '../assets/logo-mark.png';
+---
+
+<Base title="Page not found — BS Games Lab">
+  <main class="notfound container">
+    <Image src={logoMark} alt="BS Games Lab logo" width={160} densities={[1, 2]} loading="eager" />
+    <p class="eyebrow">Error 404</p>
+    <h1>Level not found.</h1>
+    <a class="home eyebrow" href="/">Back to start</a>
+  </main>
+</Base>
+
+<style>
+  .notfound {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    min-height: 100svh;
+    text-align: center;
+  }
+
+  img {
+    width: clamp(6rem, 20vw, 10rem);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--cream-dim);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .home {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.5rem;
+    border: 1px solid var(--cream-line);
+    border-radius: 999px;
+    text-decoration: none;
+    transition:
+      background 0.3s,
+      color 0.3s;
+  }
+
+  .home:hover {
+    background: var(--cream);
+    color: var(--red-lo);
+  }
+</style>
