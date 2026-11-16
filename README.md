@@ -23,8 +23,8 @@ src/pages/         index.astro (home) and 404.astro
 src/styles/        global.css — colour tokens sampled from the logo
 ```
 
-Editing content: the home page copy and the two game cards live in `src/pages/index.astro`
-(the `games` array near the top). When a game is announced, give it a title there.
+Editing content: the home page copy and the game details live in `src/pages/index.astro`
+(`mahaCrush` and `upcoming` near the top). Game images are in `src/assets/games/`.
 
 ## Deploying to Vercel
 
