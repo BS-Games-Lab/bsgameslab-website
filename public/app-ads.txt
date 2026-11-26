@@ -1,3 +1,4 @@
+ownerdomain=bsgameslab.space
 google.com, pub-6134888763178727, DIRECT, f08c47fec0942fa0
 spinx.biz, 1373698903, RESELLER, 9f2711e9aaa9f992
 unity.com, 142187765, DIRECT, 96cabb5fbdde37a7
